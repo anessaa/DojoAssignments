@@ -1,0 +1,37 @@
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+#container {
+    width: 960px;
+    background-color: #d4d1af;
+}
+
+#header {
+    height: 75px;
+    display: inline-block;
+    margin-left: 280px;
+    padding: 20px 0 20px 0;
+}
+#header h1 {
+    display: inline-block;    
+}
+#header img {
+    width: 100px;
+    background: white;
+}
+.columnone {
+    border: 5px solid black;
+    height: 300px;
+    width: 100px;
+    display: inline
+    
+}
+
+
+
+
+
+

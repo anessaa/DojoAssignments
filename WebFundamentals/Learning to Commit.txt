@@ -1,0 +1,49 @@
+Last login: Mon Apr 17 23:47:41 on ttys003
+Anessas-MBP:~ Anessa$ cd desktop
+Anessas-MBP:desktop Anessa$ mkdir gittest
+Anessas-MBP:desktop Anessa$ cd gittest
+Anessas-MBP:gittest Anessa$ git init
+Initialized empty Git repository in /Users/Anessa/Desktop/gittest/.git/
+Anessas-MBP:gittest Anessa$ touch index.html
+Anessas-MBP:gittest Anessa$ touch style.css
+Anessas-MBP:gittest Anessa$ touch aboutMe.txt
+Anessas-MBP:gittest Anessa$ git add .
+Anessas-MBP:gittest Anessa$ git commit -m "first commit"
+[master (root-commit) e8cf59f] first commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 style.css
+Anessas-MBP:gittest Anessa$ git add .
+Anessas-MBP:gittest Anessa$ git commit -m "updated aboutMe"
+[master 4900b71] updated aboutMe
+ 1 file changed, 1 insertion(+)
+Anessas-MBP:gittest Anessa$ git add .
+Anessas-MBP:gittest Anessa$ git commit -m "added favortie movie to aboutMe"
+[master 52a7300] added favortie movie to aboutMe
+ 1 file changed, 2 insertions(+)
+Anessas-MBP:gittest Anessa$ git log
+commit 52a7300f88642783c9938fac8ce281d3891cc03f
+Author: Anessa <anessaarnold@icloud.com>
+Date:   Tue Apr 18 00:05:30 2017 -0700
+
+    added favortie movie to aboutMe
+
+commit 4900b71fbd1a74f2ac604813520b95758c4578ff
+Author: Anessa <anessaarnold@icloud.com>
+Date:   Tue Apr 18 00:04:23 2017 -0700
+
+    updated aboutMe
+
+commit e8cf59f6dcb9e80a02ff83419bd3909d6e38c1f4
+Author: Anessa <anessaarnold@icloud.com>
+Date:   Tue Apr 18 00:02:25 2017 -0700
+
+    first commit
+Anessas-MBP:gittest Anessa$ git revert -n 52a7300f88642783c9938fac8ce281d3891cc03f
+Anessas-MBP:gittest Anessa$ git revert -n 52a7300f88642783c9938fac8ce281d3891cc03f
+Anessas-MBP:gittest Anessa$ git add .
+Anessas-MBP:gittest Anessa$ git commit -m "added favorite book to aboutMe"
+[master 7abf61a] added favorite book to aboutMe
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Anessas-MBP:gittest Anessa$ 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Enter a city</title>
+            <link rel="stylesheet" type="text/css">
+            <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+            var API_KEY = "c264bbb8034839d85f7b131d29a841f6";
+            $(document).ready(function(){
+                $('form').submit(function(){
+                    ('div').text("");
+                    var target = $('#city').val();
+                    $('#city').val(""); 
+                    
+                    var url = "http://api.openweathermap.org/data/2.5/weather?q="
+                    url += target;
+                    url += "&appid=" + API_KEY;
+                    url += "&units=imperial";
+                    
+                    $.get(url, function(data){
+                        console.log("we got a response from the server: ", data.main.temp)
+                        $('div').text("The temperature for " + target + " is "+ data.main.temp + "F degrees.");
+                        }, "json" ); 
+                        return false;
+                    })
+                   
+            });
+            </script>
+        </head>
+            <body>
+                <h1>Enter a city</h1>
+                <form>
+                    
+                    <input id="city" type="text" placeholder="enter a city">
+                    <input type="submit" value="Search Weather">
+
+                    <div>
+
+                    </div>
+            </body>
+    </html>

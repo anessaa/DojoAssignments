@@ -1,0 +1,57 @@
+                
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Pokedex</title>
+            <link rel="stylesheet" type="text/css" href="pokedex.css">
+            <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+            
+            $(document).ready(function(){
+                var images = "";
+                function printPokemon(){
+                    for(var i = 1; i < 152; i++) {
+                    images += '<img src="http://pokeapi.co/media/img/' +i+ '.png" id="'+i+'">';
+                    }
+                    return images;
+                }
+                 printPokemon();
+                $('#container').append(images);
+
+                
+             
+                $('img').click(function(){
+                    var poke_id = $(this).attr('id')
+                    var url = "http://pokeapi.co/api/v2/pokemon/"+poke_id+"/"
+                    
+                    $.get(url, function(data){
+                        console.log(data)
+                        var name = "<h2>"+data.name+"</h2>"
+                        var img = "<img src='http://pokeapi.co/media/img/"+ poke_id + ".png'>"
+                        for (var i = 0; i < data.types.length; i++) {
+                            var type = "<h2>Types: "+ data.types[i].type.name+ "</h2>"
+                        }
+                        var height = "<h2>Height: "+ data.height+"</h2>"
+                        var weight = "<h2>Weight: " +data.weight+"</h2>"
+                        
+                          
+                    $('.pokedex').html(name + img + type+height+weight)
+                    }, "json");
+                })
+                
+                
+            });
+            </script>
+        </head>
+            <body>
+                <div id="container">
+                </div>
+                    <div id="side">
+                    <div class="pokedex">
+                    </div>
+                    
+                </div>
+            </body>
+            </html>

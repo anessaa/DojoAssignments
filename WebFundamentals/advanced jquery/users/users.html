@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Users</title>
+            <link rel="stylesheet" type="text/css" href="users.css">
+            <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+
+            $(document).ready(function(){
+                $('#usersForm').submit(function(){
+                var first = $('#firstname').val();
+                var last = $('#lastname').val();
+                var email = $('#email').val();
+                var contact = $('#contact').val();
+                $('#tablefirst').append(" " +first);
+                $('#tablelast').append(" " +last);
+                $('#tableemail').append(" "+ email);
+                $('#tablecontact').append(" " + contact);
+                return false;
+                
+                
+                })
+            });
+            </script>
+        </head>
+            <body>
+                <table>
+                    <tr>
+                        <th id="tablefirst">Frist Name: </th>
+                        <th id="tablelast">Last Name: </th>
+                        <th id="tableemail">Email Address: </th>
+                        <th id="tablecontact">Contact #: </th>
+                    </tr>
+                </table>
+                <h3><u>Add Users</u></h3>
+                
+                    <form id="usersForm">
+                        First Name <input type="text" name="firstname" placeholder="First Name" id="firstname"><br>
+                        Last Name <input type="text" name="lastname" placeholder="Last Name" id="lastname"><br>
+                        Email Address <input type="text" name="emailaddress" placeholder="Email Address" id="email"><br>
+                        Contact # <input type="text" name="contact#" placeholder="Contact #" id="contact"><br>
+                        Submit: <input type="submit" value="submit"><br>
+                    </form>
+                
+            </body>
+        </html

@@ -1,0 +1,164 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+
+#wrapper {
+    background: radial-gradient(#6f5964, #1d0d11);
+    width: 980px;
+    height: auto;
+    
+}
+#header {
+    background: #fafafa;
+    height: 60px;
+}
+#heading1 {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    
+    
+}
+#heading2 {
+    margin-left: 500px;
+    
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+#h2_second_column {
+    padding-top: 11px;
+    font-size: 1.6em;
+    }
+}
+
+#top_content {
+    display: inline-block;
+    height: 340px;
+   
+}
+#about_textbox {
+    background: linear-gradient(#aeaeb2,#878593,#aeaeb2);
+    width: 465.2px;
+    height: 50px;
+    color: #fffcf6;
+    padding-left: 10px;
+}
+
+.p_padding {
+    padding: 10px;
+}
+
+.second_column{
+    width: 475px;
+    height: 275.16px;
+    display: inline-block;
+    margin-left: 35px;
+    background: #e8dfe7;
+    vertical-align: top;
+    margin-top: 25px;
+    
+    
+}
+#jayne_img {
+    width: 400px;
+    border: 6px solid #c0c0c0;
+    margin-left: 25px;
+    display: inline-block;
+    margin-top: 25px;
+}
+#about {
+    background: #e8dfe7;
+    width: 400px;
+    height: 275px;
+    vertical-align: top;
+    font-size: 1.4em;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+#header h1,h2 {
+    display: inline-block;
+}
+.header_text {
+    background: linear-gradient(#ababb0, #878593,#ababb0);
+    width: 500px;
+    display: inline-block;
+    
+}
+.tech_img {
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.three_column_textbox {
+    background: linear-gradient(#aeaeb2,#878593,#aeaeb2);
+    width: 270px;
+    height: 15px;
+    color: #fffcf6;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1.4em;
+}
+.three_column_tech_textbox {
+    background: linear-gradient(#aeaeb2,#878593,#aeaeb2);
+    width: 270px;
+    height: 8px;
+    color: #fffcf6;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+.product_img {
+    width: 279.5px;
+    display: inline-block;
+}
+.three_column {
+    width: 280px;
+    display: inline-block;
+    margin-left: 35px;
+    background: #e8dfe7;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.product_info {
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 150px;
+    width: 270px;
+    
+}
+.product_button {
+    background: green;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    
+}
+.contact_info {
+    text-align: center;
+    margin: 15px;
+}
+.social_icon {
+    width: 20px;
+}
+

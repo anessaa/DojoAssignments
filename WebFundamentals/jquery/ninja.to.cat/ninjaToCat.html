@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <link rel="stylesheet" type="text/css" href="disappearing.pup.css">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $('img').click(function(){
+                var cat = $(this).attr('data-alt-src');
+                var ninja = $(this).attr('src');
+                $(this).attr('src', cat);
+                $(this).attr('data-alt-src', ninja);
+            })
+           
+         });
+
+        </script>
+        </head>
+        <body>
+            <div id="size">
+            <div>
+                <img src="ninja0.png" data-alt-src='cat0.png'>
+            </div>
+            <div>
+                <img src="ninja1.png" data-alt-src='cat1.png'>
+            </div>
+            <div>
+                <img src="ninja2.png" data-alt-src='cat2.png'>
+            </div>
+            <div>
+                <img src="ninja3.png" data-alt-src='cat3.png'>
+            </div>
+            <div>
+                <img src="ninja4.png" data-alt-src='cat4.png'>
+            </div>
+            </div>
+        </body>
+        </html>

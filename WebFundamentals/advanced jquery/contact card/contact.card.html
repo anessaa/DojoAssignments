@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <link rel="stylesheet" type="text/css" href="contact.card.css">
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $('#contact').submit(function(){
+                var first = $('#first').val();
+                var last = $('#last').val();
+                var des = $('#descrip').val();
+                var htmlString = first + " " + last;
+                $('#side').append("<div id='new'><p>"+htmlString+"</p><p id='secret'>"+des+"</p></div>");
+                return false;
+                })
+            $(document).on('click','#new',function(){
+                    $(this).children().toggle();
+                })
+            });
+        </script>    
+        </head>
+        <body>
+            <div id="info-box">
+                <form id="contact">
+                    First name:<br>
+                    <input id="first" type="text" name="firstname" placeholder="First Name"><br>
+                    Last name:<br>
+                    <input id="last" type="text" name="lastname" placeholder="Last Name"><br>
+                    Description:<br><textarea id="descrip"></textarea><br>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <div id="side">
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,11 @@
+Anessas-MacBook-Pro:~ Anessa$ cd desktop
+Anessas-MacBook-Pro:desktop Anessa$ mkdir test
+Anessas-MacBook-Pro:desktop Anessa$ touch test/index.html
+Anessas-MacBook-Pro:desktop Anessa$ touch test/styles.css
+Anessas-MacBook-Pro:desktop Anessa$ touch test/commands.txt
+Anessas-MacBook-Pro:desktop Anessa$ cp test/index.html test/index_2.html
+Anessas-MacBook-Pro:desktop Anessa$ cd test
+Anessas-MacBook-Pro:test Anessa$ cd .. 
+Anessas-MacBook-Pro:desktop Anessa$ mkdir destination
+Anessas-MacBook-Pro:desktop Anessa$ mv test/index_2.html destination/index_2.html
+Anessas-MacBook-Pro:desktop Anessa$ rm -rf destination
