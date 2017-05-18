@@ -1,0 +1,38 @@
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="/static/register.css" type="text/css">
+    <title>Registration</title>
+  </head>
+  <body>
+    <form action="/registration_form", method="POST">
+  <div class="container">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+          <p>{{message}}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <label><b>First Name:</b></label>
+    <input type="text" placeholder="Enter First Name" name="first_name" required>
+    <label><b>Last Name:</b></label>
+    <input type="text" placeholder="Enter Last Name" name="last_name" required>
+    <label><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <label><b>Confirm Password:</b></label>
+    <input type="password" placeholder="Confim Password" name="confirm_password" required>
+    <input type="checkbox" checked="checked"> Remember me
+
+    <div class="clearfix">
+      <button type="button"  class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Register</button>
+    </div>
+  </div>
+</form>
+  </body>
+</html>

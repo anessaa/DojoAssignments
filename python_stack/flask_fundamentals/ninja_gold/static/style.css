@@ -1,0 +1,29 @@
+body {
+    width: 970px;
+}
+div.building {
+    display: inline-block;
+    height: 150px;
+    width: 200px;
+    border: 5px solid black;
+    text-align: center;
+
+}
+#special {
+    overflow: scroll;
+    width: 840px;
+    height: 300px;
+    border: 5px solid black;
+    margin-top: 15px;
+    
+}
+p.green {
+    color: green;
+    display: block;
+}
+p.red {
+    color: red;
+    display: block;
+}
+
+
